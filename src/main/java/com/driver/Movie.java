@@ -5,6 +5,7 @@ public class Movie {
     private int durationInMinutes;
     private double imdbRating;
 
+    //-------------- Constructor ---------------
     public Movie() {
     }
 
@@ -14,24 +15,29 @@ public class Movie {
         this.imdbRating = imdbRating;
     }
 
+
+    //-------------- Getter ------------------
+
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public int getDurationInMinutes() {
         return durationInMinutes;
     }
 
-    public void setDurationInMinutes(int durationInMinutes) {
-        this.durationInMinutes = durationInMinutes;
-    }
-
     public double getImdbRating() {
         return imdbRating;
+    }
+
+    //----------------- Setter -------------------
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDurationInMinutes(int durationInMinutes) {
+        this.durationInMinutes = durationInMinutes;
     }
 
     public void setImdbRating(double imdbRating) {
